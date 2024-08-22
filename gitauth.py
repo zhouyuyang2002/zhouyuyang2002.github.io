@@ -5,7 +5,7 @@ import time
 # api 是 chat 的入口，对应 CAPI；
 # proxy 是代码补全接口，对应 proxy，这两个都需要 https
 # 其他参数随便配置
-ENDPOINTS = {"api": "http://60.204.219.177:8181/v1", "proxy": "http://60.204.219.177:8181"}
+ENDPOINTS = {"api": "https://60.204.219.177:8181/v1", "proxy": "https://60.204.219.177:8181"}
 USER_CODE="MYCODE"
 DEVICE_CODE = "0OMfCV7prArF6nT1H49nnv32sOo16yza"
 ACCESS_TOKEN = "0OMfCV7prArF6nT1H49nnv32sOo16yza"
