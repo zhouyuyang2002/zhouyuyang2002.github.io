@@ -212,24 +212,24 @@
 				<p> 本参数不定期更新，如果询问请以最新版本为准</p>
 				<d></d> </p>
 				<pre><code class="language-python">from decimal import Decimal, getcontext
-	getcontext().prec = 200
+getcontext().prec = 200
 	
-	def mypow(a: Decimal, b: Decimal, c: Decimal):
-		d = Decimal(1)
-		while b != 0:
-			if b % 2 == 1:
-				d = d * a % c
-			a = a * a % c
-			b //= 2
-		return d
+def mypow(a: Decimal, b: Decimal, c: Decimal):
+	d = Decimal(1)
+	while b != 0:
+		if b % 2 == 1:
+			d = d * a % c
+		a = a * a % c
+		b //= 2
+	return d
 					
-	p = Decimal(2713583219438673938445853370966371993626615152290889786016382741451851)
-	k = Decimal(133920012531523964865884369631440241431698880362905792174918481711974)
-	d = Decimal(1935767621649077585178290935150986338193812719244163271385012360882837)
-	x = Decimal() # "在这里输入你要验证的数字"
-	# 例如，x = Decimal(1145141919810)
+p = Decimal(2713583219438673938445853370966371993626615152290889786016382741451851)
+k = Decimal(133920012531523964865884369631440241431698880362905792174918481711974)
+d = Decimal(1935767621649077585178290935150986338193812719244163271385012360882837)
+x = Decimal() # "在这里输入你要验证的数字"
+# 例如，x = Decimal(1145141919810)
 
-	assert mypow(x, d, p) == k</code></pre>
+assert mypow(x, d, p) == k</code></pre>
 			</section>
 		</main>
 	</div>
